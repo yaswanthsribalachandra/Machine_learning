@@ -7,9 +7,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ---------------- CONFIG ----------------
-API_KEY = os.getenv("API_KEY")
+'''API_KEY = os.getenv("API_KEY")
 BASE_URL = os.getenv("BASE_URL")
-MODEL = os.getenv("MODEL")
+MODEL = os.getenv("MODEL")'''
+
+API_KEY = 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
+BASE_URL = https://integrate.api.nvidia.com/v1
+MODEL = meta/llama-3.3-70b-instruct
 
 client = OpenAI(
     base_url=BASE_URL,
