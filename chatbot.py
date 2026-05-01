@@ -8,9 +8,9 @@ load_dotenv()
 
 # ---------------- CONFIG ----------------
 
-API_KEY = "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"
-BASE_URL = "https://integrate.api.nvidia.com/v1"
-MODEL = "meta/llama-3.3-70b-instruct"
+API_KEY = st.secrets["API_KEY"]
+BASE_URL = st.secrets["BASE_URL"]
+MODEL = st.secrets["MODEL"]
 
 client = OpenAI(
     base_url=BASE_URL,
